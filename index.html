@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cosmic encounter alien selector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="functions.js"></script>
+</head>
+<body>
+<div class="header">
+    <h1 id="title"> Cosmic Hero Picker</h1>
+</div>
+
+<div class="joinForm">
+    <form id="join">
+        <input id="room" autocomplete="off" placeholder="Room name"/>
+        <button onclick="joinRoom();  return false;">Join or create room</button>
+    </form>
+</div>
+<ul id="messages">
+</ul>
+<form id="bottom">
+    <button class ="bottom-button" onclick="requestHero();  return false;">Request</button>
+    <button class ="bottom-button" onclick="resetHeroes();  return false;">Reset</button>
+</form>
+</body>
+</html>
