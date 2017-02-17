@@ -3,7 +3,7 @@ var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var fs = require('fs');
-var heroes = fs.readFileSync('aliens.txt').toString().split("\n");
+var heroes = fs.readFileSync('porr.txt').toString().split("\n");
 var rooms = [];
 
 app.get('/', function(req, res){
